@@ -1,14 +1,31 @@
 <head>
 <script src="https://kit.fontawesome.com/1d25e96ad1.js" crossorigin="anonymous"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<div class="container">
-  <div class="row">
-    <div class="mx-auto col-11 col-sm-10 col-lg-8 col-xl-6">
-      <h1>welcome to
-        <i class="fa-solid fa-book"></i>
-        <strong>Bookers</strong>!!
-      </h1>
+<body>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>welcome to
+            <i class="fa-solid fa-book"></i>
+            <strong>Bookers</strong>!!
+          </h1>
+          <p>In <i class="fa-solid fa-book"></i><storong>Bookers</storong>,</p>
+          <p>you can share and exchange your opinions,inpressions,and emotions</p>
+          <p>about various books!</p>
+        </div>
+        <div class="btn-wrapper col-10 mx-auto">
+          <div class="row">
+            <%= link_to "Log in", new_user_session_path, class: "btn btn-info btn-sm btn-block mb-3 sign_in" %>
+          </div>
+          <div class="row">
+            <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success btn-sm btn-block sign_up" %>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </main>
+</body>
