@@ -1,0 +1,17 @@
+<div class="col-md-8 offset-md-1">
+  <table class="table table-hover table-inverse">
+    <h2>users</h2>
+    <thead>
+      <th>image</th>
+      <th>name</th>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= image_tag user.get_profile_image(80,80)%></td>
+          <td><%= user.name %></td>
+          <td><%= link_to "Show", "/users/#{user.id}" %></td>>
+      <% end %>
+    </tbody>
+  </table>
+</div>
