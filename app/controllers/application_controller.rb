@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sgin_in_path_for(resource)
-    user_path(resource)
+    books_path(resource)
   end
 
   protected
